@@ -8,26 +8,27 @@
         <meta content="" name="keywords" />
         <meta content="" name="author" />
 
+        {% load static %}
         <!--[if lt IE 9]>
-            <script src="js/html5shiv.js"></script>
+            <script src="{% static 'js/html5shiv.js' %}"></script>
         <![endif]-->
 
         <!-- CSS Files
     ================================================== -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
-        <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
-        <link href="css/animate.css" rel="stylesheet" type="text/css" />
-        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
-        <link href="css/owl.theme.css" rel="stylesheet" type="text/css" />
-        <link href="css/owl.transitions.css" rel="stylesheet" type="text/css" />
-        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
-        <link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" />
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/bootstrap-reboot.min.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/owl.theme.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/owl.transitions.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/jquery.countdown.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
 
         <!-- color scheme -->
-        <link id="colors" href="css/colors/scheme-02.css" rel="stylesheet" type="text/css" />
-        <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+        <link id="colors" href="{% static 'css/colors/scheme-02.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/coloring.css' %}" rel="stylesheet" type="text/css" />
     </head>
 
      <body class="side-layout">
@@ -100,7 +101,7 @@
                     <!-- logo begin -->
                     <div id="sc-logo">
                         <a href="index.html">
-                            <img src="images/misc/profile-2.jpg" class="img-fluid" alt="">
+                            <img src="{% static 'images/misc/profile-2.jpg' %}" class="img-fluid" alt="">
                             <h1>José Smith</h1>
                         </a>
                     </div>
@@ -142,7 +143,7 @@
             <div class="no-bottom no-top text-light" id="content" data-bgcolor="#202020">
                 <div id="top"></div>
 
-                <section id="section-hero" class="vertical-center text-light" data-bgimage="url(images/background/4.jpg) top" data-stellar-background-ratio=".5">
+                <section id="section-hero" class="vertical-center text-light" data-bgimage="url({% static 'images/background/4.jpg' %}) top" data-stellar-background-ratio=".5">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 offset-md-2 text-center">
@@ -152,10 +153,9 @@
                                 <div class="h1_big text-white">
                                     I Am
                                     <div class="typed-strings">
-                                        <p>Designer</p>
-                                        <p>Programmer</p>
-                                        <p>Photographer</p>
-                                        <p>José Smith</p>
+                                        <p>Python web developer</p>
+                                        <p>Engineer</p>
+                                        <p>a dreamer (;</p>
                                     </div>
                                     <div class="typed"></div>
                                 </div>
@@ -177,8 +177,8 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6 mb-sm-30 text-center">
                                 <div class="de-images">
-                                    <img class="di-small-2 wow fadeInLeft" src="images/misc/3b.jpg" alt="" />
-                                    <img class="img-fluid wow fadeInRight" src="images/misc/3a.jpg" alt="" />
+                                    <img class="di-small-2 wow fadeInLeft" src="{% static 'images/misc/3b.jpg' %}" alt="" />
+                                    <img class="img-fluid wow fadeInRight" src="{% static 'images/misc/3a.jpg' %}" alt="" />
                                 </div>
                             </div>
 
@@ -329,7 +329,7 @@
                     </div>
                 </section>
 
-                <section id="section-cta" class="text-light" data-bgimage="url(images/background/3.jpg) top" data-stellar-background-ratio=".5">
+                <section id="section-cta" class="text-light" data-bgimage="url({% static 'images/background/3.jpg' %}) top" data-stellar-background-ratio=".5">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8 offset-md-2 text-center">
@@ -358,7 +358,7 @@
                             <div class="col-md-8 offset-md-2">
                                 <div id="testimonial-carousel-single" class="owl-carousel owl-theme wow fadeInUp">
                                     <blockquote class="testimonial-big text-light">
-                                        <img src="images/people/1.jpg" alt="" />
+                                        <img src="{% static 'images/people/1.jpg' %}" alt="" />
                                         I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                                         nostrud exercitation ullamco laboris nisi ut aliquip.
 
@@ -366,7 +366,7 @@
                                     </blockquote>
 
                                     <blockquote class="testimonial-big text-light">
-                                        <img src="images/people/2.jpg" alt="" />
+                                        <img src="{% static 'images/people/2.jpg' %}" alt="" />
                                         I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                                         nostrud exercitation ullamco laboris nisi ut aliquip.
 
@@ -374,7 +374,7 @@
                                     </blockquote>
 
                                     <blockquote class="testimonial-big text-light">
-                                        <img src="images/people/3.jpg" alt="" />
+                                        <img src="{% static 'images/people/3.jpg' %}" alt="" />
                                         I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                                         nostrud exercitation ullamco laboris nisi ut aliquip.
 
@@ -417,7 +417,7 @@
                                                     <span class="project-name">Multi Images</span>
                                                 </span>
                                             </span>
-                                            <img src="images/portfolio-2/1.jpg" alt="" />
+                                            <img src="{% static 'images/portfolio-2/1.jpg' %}" alt="" />
                                         </div>
                                     </div>
                                     <!-- close gallery item -->
@@ -430,7 +430,7 @@
                                                     <span class="project-name">Slider Images</span>
                                                 </span>
                                             </span>
-                                            <img src="images/portfolio-2/2.jpg" alt="" />
+                                            <img src="{% static 'images/portfolio-2/2.jpg' %}" alt="" />
                                         </div>
                                     </div>
                                     <!-- close gallery item -->
@@ -443,7 +443,7 @@
                                                     <span class="project-name">Youtube Video</span>
                                                 </span>
                                             </span>
-                                            <img src="images/portfolio-2/3.jpg" alt="" />
+                                            <img src="{% static 'images/portfolio-2/3.jpg' %}" alt="" />
                                         </div>
                                     </div>
                                     <!-- close gallery item -->
@@ -456,7 +456,7 @@
                                                     <span class="project-name">Multi Images Big</span>
                                                 </span>
                                             </span>
-                                            <img src="images/portfolio-2/4.jpg" alt="" />
+                                            <img src="{% static 'images/portfolio-2/4.jpg' %}" alt="" />
                                         </div>
                                     </div>
                                     <!-- close gallery item -->
@@ -469,7 +469,7 @@
                                                     <span class="project-name">Slider Images Big</span>
                                                 </span>
                                             </span>
-                                            <img src="images/portfolio-2/5.jpg" alt="" />
+                                            <img src="{% static 'images/portfolio-2/5.jpg' %}" alt="" />
                                         </div>
                                     </div>
                                     <!-- close gallery item -->
@@ -482,7 +482,7 @@
                                                     <span class="project-name">Youtube Video Big</span>
                                                 </span>
                                             </span>
-                                            <img src="images/portfolio-2/6.jpg" alt="" />
+                                            <img src="{% static 'images/portfolio-2/6.jpg' %}" alt="" />
                                         </div>
                                     </div>
                                     <!-- close gallery item -->
@@ -517,7 +517,7 @@
                                 <div class="bloglist item">
                                     <div class="post-content">
                                         <div class="post-image">
-                                            <img alt="" src="images/news/1.jpg" />
+                                            <img alt="" src="{% static 'images/news/1.jpg' %}" />
                                             <div class="post-info">
                                                 <div class="inner"><span class="post-date">10 hours ago</span> <span class="post-author">Oscar Helman</span></div>
                                             </div>
@@ -534,7 +534,7 @@
                                 <div class="bloglist item">
                                     <div class="post-content">
                                         <div class="post-image">
-                                            <img alt="" src="images/news/2.jpg" />
+                                            <img alt="" src="{% static 'images/news/2.jpg' %}" />
                                             <div class="post-info">
                                                 <div class="inner"><span class="post-date">10 hours ago</span> <span class="post-author">Oscar Helman</span></div>
                                             </div>
@@ -551,7 +551,7 @@
                                 <div class="bloglist item">
                                     <div class="post-content">
                                         <div class="post-image">
-                                            <img alt="" src="images/news/3.jpg" />
+                                            <img alt="" src="{% static 'images/news/3.jpg' %}" />
                                             <div class="post-info">
                                                 <div class="inner"><span class="post-date">10 hours ago</span> <span class="post-author">Oscar Helman</span></div>
                                             </div>
@@ -673,21 +673,21 @@
 
         <!-- Javascript Files
     ================================================== -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.isotope.min.js"></script>
-        <script src="js/easing.js"></script>
-        <script src="js/owl.carousel.js"></script>
-        <script src="js/validation.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/enquire.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.plugin.js"></script>
-        <script src="js/typed.js"></script>
-        <script src="js/typed-custom.js"></script>
-        <script src="js/jquery.countTo.js"></script>
-        <script src="js/jquery.countdown.js"></script>
-        <script src="js/designesia.js"></script>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/wow.min.js' %}"></script>
+        <script src="{% static 'js/jquery.isotope.min.js' %}"></script>
+        <script src="{% static 'js/easing.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.js' %}"></script>
+        <script src="{% static 'js/validation.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'js/enquire.min.js' %}"></script>
+        <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+        <script src="{% static 'js/jquery.plugin.js' %}"></script>
+        <script src="{% static 'js/typed.js' %}"></script>
+        <script src="{% static 'js/typed-custom.js' %}"></script>
+        <script src="{% static 'js/jquery.countTo.js' %}"></script>
+        <script src="{% static 'js/jquery.countdown.js' %}"></script>
+        <script src="{% static 'js/designesia.js' %}"></script>
     </body>
 </html>
